@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<style type="text/css">
+			@font-face {font-family: 'iconfont';
+			    src: url('../icon/iconfont.eot');
+			    src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'),
+			    url('../icon/iconfont.woff') format('woff'),
+			    url('../icon/iconfont.ttf') format('truetype'),
+			    url('../icon/iconfont.svg#iconfont') format('svg');
+			}
+			.iconfont{
+			    font-family:"iconfont" !important;
+			    font-size:16px;font-style:normal;
+			    -webkit-font-smoothing: antialiased;
+			    -webkit-text-stroke-width: 0.2px;
+			    -moz-osx-font-smoothing: grayscale;}
+		</style>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+	<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/cart.js" ></script>
+	<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+	<body>
+		<div id="header-box">
+			 <div id="header">
+			 	<div id="tubiao">
+			 		<img src="../img/header-tubiao.jpg" />
+			 		<p><a href = "https://www.jd.com/">京东超市</a></p>
+			 	</div>
+			 	<ul id="header-list">
+				 	<li id="header-li-1">
+				 		<a href="../html/denglu.html">你好，请登录</a>
+				 	</li>
+				 	<li id="header-li-2"><a href="../html/zhuce.html">免费注册</a></li>
+				 	<li>|</li>
+				 	<li id="header-li-3"><a href="../html/denglu.html">我的订单</a></li>
+				 	<li>|</li>
+				 	<li id="header-li-4"><a href="../html/denglu.html">我的京东&nbsp;&nbsp;<i class="iconfont">&#xe6a6;</i></a>
+				 		<div id="wodejd">
+					 		<ul id="erji-top">
+							 	<li><a href="../html/denglu.html">待处理订单</a></li>
+							 	<li><a href="../html/denglu.html">消息</a></li>
+							 	<li><a href="../html/denglu.html">返修退换货</a></li>
+							 	<li><a href="../html/denglu.html">我的问答</a></li>
+							 	<li><a href="../html/denglu.html">降价商品</a></li>
+							 	<li><a href="../html/denglu.html">我的关注</a></li>
+							 </ul>
+							 <ul id="erji-buttom">
+							 	<li><a href="../html/denglu.html">我的京豆</a></li>
+							 	<li><a href="../html/denglu.html">我的优惠卷</a></li>
+							 	<li><a href="../html/denglu.html">我的白条</a></li>
+							 	<li><a href="../html/denglu.html">我的理财</a></li>
+							 </ul>	
+				 		</div>
+				 	</li>
+				 	<li>|</li>
+				 	<li id="header-li-5"><a href="../html/denglu.html">京东会员</a></li>
+				 	<li>|</li>
+				 	<li id="header-li-6"><a href="https://b.jd.com/">企业采购</a></li>
+				 	<li>|</li>
+				 	<li id="header-li-7">客户服务&nbsp;&nbsp;<i class="iconfont">&#xe6a6;</i>
+				 		<div id="kehu">
+					 		<ul id="kehu-erji-top">
+					 			<li class="kehu-a">客户</li>
+							 	<li><a href="https://help.jd.com/index.html">帮助中心</a></li>
+							 	<li><a href="../html/denglu.html">售后服务</a></li>
+							 	<li><a href="../html/denglu.html">在线客服</a></li>
+							 	<li><a href="../html/denglu.html">意见建议</a></li>
+							 	<li><a href="../html/denglu.html">电话客服</a></li>
+							 	<li><a href="https://www.jd.com/contact/service.html">客服邮箱</a></li>
+							 	<li><a href="https://jrhelp.jd.com/">金融咨询</a></li>
+							 	<li><a href="">全球售客服</a></li>
+							 </ul>
+							 <ul id="kehu-erji-buttom">
+							 	<li class="kehu-b">商户</li>
+							 	<li><a href="https://vc.jd.com/cooperation.html">合作招商</a></li>
+							 	<li><a href="https://xue.jd.com/">学习中心</a></li>
+							 	<li><a href="https://passport.shop.jd.com/login/index.action?ReturnUrl=https%3A%2F%2Fshop.jd.com%2F">商家后台</a></li>
+							 	<li><a href="https://jm.jd.com/index/index.html">京麦工作台</a></li>
+							 	<li><a href="https://helpcenter.jd.com/venderportal/index.html">商家帮助</a></li>
+							 	<li><a href="https://rule.jd.com/rule/index.action">规则平台</a></li>
+							 </ul>	
+				 		</div>
+				 	</li>
+				 	<li>|</li>
+				 	<li id="header-li-8">网站导航&nbsp;&nbsp;<i class="iconfont">&#xe6a6;</i>
+				 		<div id="header-daohang">
+				 			<ul id="daohang-erji-tese">
+				 				<p>特色主题</p>
+				 				<li><a href="//try.jd.com/">京东试用</a></li>
+				 				<li><a href="//jr.jd.com/">京东金融</a></li>
+				 				<li><a href="//global.jd.com/">全球售</a></li>
+				 				<li><a href="//www.joybuy.com/">国际站</a></li>
+				 				<li><a href="//vip.jd.com/">京东会员</a></li>
+				 				<li><a href="//xinpin.jd.com/">闪购</a></li>
+				 				<li><a href="//what.jd.com/">买什么</a></li>
+				 				<li><a href="//www.jd.ru/">俄语站</a></li>
+				 				<li><a href="//diy.jd.com/">装机大师</a></li>
+				 				<li><a href="//pingce.jd.com/index.html">0元测评</a></li>
+				 				<li><a href="//ding.jd.com/">定期送</a></li>
+				 				<li><a href="//cn.jd.com/">港澳售</a></li>
+				 				<li><a href="//a.jd.com/">优惠券</a></li>
+				 				<li><a href="//miaosha.jd.com/">秒杀</a></li>
+				 				<li><a href="//red.jd.com/">闪购</a></li>
+				 				<li><a href="//www.jd.id/">印尼站</a></li>
+				 				<li><a href="//https://ft.jd.com">京东金融科技</a></li>
+				 				<li><a href="//jr.jd.com/buy/index">In货推荐</a></li>
+				 				<li><a href="//https://up.jd.com/?entrance=pc_dh_a/">陪伴计划</a></li>
+				 				<li><a href="//jioin.jd.com/">出海招商</a></li>
+				 			</ul>
+				 			<ul id="daohang-erji-hangye">
+				 				<p>行业频道</p>
+				 				<li><a href="//try.jd.com/">手机</a></li>
+				 				<li><a href="//try.jd.com/">智能数码</a></li>
+				 				<li><a href="//try.jd.com/">玩3C</a></li>
+				 				<li><a href="//try.jd.com/">电脑办公</a></li>
+				 				<li><a href="//try.jd.com/">家用电器</a></li>
+				 				<li><a href="//try.jd.com/">京东智能</a></li>
+				 				<li><a href="//try.jd.com/">服装城</a></li>
+				 				<li><a href="//try.jd.com/">京东生鲜</a></li>
+				 				<li><a href="//try.jd.com/">家装城</a></li>
+				 				<li><a href="//try.jd.com/">母婴</a></li>
+				 				<li><a href="//try.jd.com/">食品</a></li>
+				 				<li><a href="//try.jd.com/">农资频道</a></li>
+				 				<li><a href="//try.jd.com/">整车</a></li>
+				 				<li><a href="//try.jd.com/">图书</a></li>
+				 				<li><a href="//try.jd.com/">京东元器件</a></li>
+				 			</ul>
+				 			<ul id="daohang-erji-life">
+				 				<p>生活服务</p>
+				 				<li><a href="//try.jd.com/">京东众筹</a></li>
+				 				<li><a href="//try.jd.com/">白条</a></li>
+				 				<li><a href="//try.jd.com/">京东金融App</a></li>
+				 				<li><a href="//try.jd.com/">京东小金库</a></li>
+				 				<li><a href="//try.jd.com/">理财</a></li>
+				 				<li><a href="//try.jd.com/">智能家电</a></li>
+				 				<li><a href="//try.jd.com/">话费</a></li>
+				 				<li><a href="//try.jd.com/">水电煤</a></li>
+				 				<li><a href="//try.jd.com/">彩票</a></li>
+				 				<li><a href="//try.jd.com/">旅行</a></li>
+				 				<li><a href="//try.jd.com/">机票酒店</a></li>
+				 				<li><a href="//try.jd.com/">电影票</a></li>
+				 				<li><a href="//try.jd.com/">京东到家</a></li>
+				 				<li><a href="//try.jd.com/">游戏</a></li>
+				 			</ul>
+				 			<ul id="daohang-erji-jingxuan">
+				 				<p>更多精选</p>
+				 				<li><a href="//try.jd.com/">合作招商</a></li>
+				 				<li><a href="//try.jd.com/">京东通信</a></li>
+				 				<li><a href="//try.jd.com/">京东E卡</a></li>
+				 				<li><a href="//try.jd.com/">企业采购</a></li>
+				 				<li><a href="//try.jd.com/">服务市场</a></li>
+				 				<li><a href="//try.jd.com/">办公生活馆</a></li>
+				 				<li><a href="//try.jd.com/">乡村招募</a></li>
+				 				<li><a href="//try.jd.com/">校园加盟</a></li>
+				 				<li><a href="//try.jd.com/">京友邦</a></li>
+				 				<li><a href="//try.jd.com/">京东社区</a></li>
+				 				<li><a href="//try.jd.com/">游戏社区</a></li>
+				 				<li><a href="//try.jd.com/">知识产权维护</a></li>
+				 			</ul>
+				 		</div>
+				 	</li>
+				 	<li>|</li>
+				 	<li id="header-li-9"><a href="https://app.jd.com/">手机京东</a></li>
+				 </ul>
+				 
+			 </div>	
+		</div>
+		<div id="login">
+			<div id="logo">
+				<a href="//chaoshi.jd.com">
+					<img src="../img/logo.jpg"/>
+				</a>
+			</div>
+				<div id="sousuo">
+					<input type="text" id="txt" placeholder="榴莲" />
+					<ul id="txt-u"></ul>
+					<!--<ul id="text-list"></ul>-->
+					<span>搜索</span>
+				</div>
+				<div id="cart">
+					<p>我的购物车</p>
+					<i class="iconfont">&#xe698;</i>
+					<span>0</span>
+				</div>
+		</div>
+		<div id="cart-box">
+		
+			<ul id="cart-cart">
+				
+			</ul>
+				
+		</div>
+	</body>
+</html>

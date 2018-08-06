@@ -1,0 +1,88 @@
+@charset "UTF-8";
+body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol {
+  list-style: none; }
+
+img, fieldset {
+  border: 0; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100; }
+
+body {
+  font-family: "微软雅黑";
+  font-size: 14px; }
+
+input, a {
+  outline: none; }
+
+#z-top {
+  width: 1200px;
+  height: 100px;
+  border-bottom: 5px solid #999999;
+  margin: 0 auto;
+  line-height: 100px; }
+  #z-top img {
+    float: left;
+    display: inline-block;
+    margin: auto 10px; }
+  #z-top #p1 {
+    float: left;
+    font-size: 18px; }
+  #z-top #p2 {
+    float: right; }
+  #z-top a {
+    display: inline-block;
+    float: right;
+    color: red;
+    font-size: 18px; }
+
+#z-bottom {
+  height: 600px;
+  background: url(../img/chaoshi_seckill_bg.png) top no-repeat; }
+  #z-bottom #z-bottom-box {
+    height: 400px;
+    width: 350px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    position: relative; }
+    #z-bottom #z-bottom-box p {
+      color: red;
+      font-size: 24px;
+      font-weight: 900;
+      position: absolute;
+      left: 151px;
+      top: 20px; }
+    #z-bottom #z-bottom-box #zhuce-zhang {
+      height: 30px;
+      width: 300px;
+      left: 25px;
+      position: absolute;
+      top: 84px; }
+    #z-bottom #z-bottom-box #zhuce-mima {
+      height: 30px;
+      width: 300px;
+      left: 25px;
+      position: absolute;
+      top: 144px; }
+    #z-bottom #z-bottom-box #zhuce-btn {
+      height: 30px;
+      width: 100px;
+      background: red;
+      color: #000000;
+      text-align: center;
+      line-height: 30px;
+      font-size: 16px;
+      position: absolute;
+      left: 125px;
+      top: 234px; }
